@@ -84,7 +84,7 @@
         <div class="nav-brand">BrandName</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
-                <a class="link " href="/">home</a>
+                <a class="link link-active" href="/">home</a>
             </li>
             <li class="list-item-inline">
                 <a class="link" href="/">projects</a>
@@ -102,25 +102,29 @@
 
     <h2>@header</h2>
 
-    <header>
-        <img src="images/hero.svg" alt="">
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/hero.svg" alt="">
+        <h1 class="hero-heading">aditya murte the <span class="heading-inverted"> web developer</span></h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
     <!-- white section -->
-    <section>
-        <h3>white sectiom</h3>
-        <p>this will have white background</p>
+    <section class="section">
+        <div class="container container-center">
+        <h1>white sectiom</h1>
+        <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+        </div>
 
     </section>
 
     <!-- off=white-section -->
-    <section>
-        <h3>off white section</h3>
-        <p>this will have gray background</p>
+    <section class="section ow">
+        <div class="container container-center">
+        <h1>off white section</h1>
+        <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+        </div>
     </section>
 
     <hr>
@@ -129,17 +133,23 @@
 
     <h2>@footer</h2>
 
-    <footer>
-        <div>small heading inside footer</div>
-        <ul>
-            <li>
+    <footer class="footer ">
+        <div class="footer-header">small heading inside footer</div>
+        <ul class=" list-non-bullet social-link">
+            <li class="list-item-inline"> 
+                <a class="link " href="/">
                 socialone
+                 </a>
             </li>
-            <li>
+            <li class="list-item-inline">
+                <a class="link" href="">
                 socialtwo
+                 </a>
             </li>
-            <li>
+            <li class="list-item-inline">
+                <a class="link" href="">
                 socialthree
+                </a>
             </li>
         </ul>
 
