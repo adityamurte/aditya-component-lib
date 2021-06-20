@@ -43,8 +43,8 @@
     <!-- links -->
     <h2>@links</h2>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
 
     <hr>
 
@@ -53,7 +53,7 @@
 
     <h3>unordered lists</h3>
     <!-- we will remove bullets using css later  -->
-    <ul>
+    <ul class="list-non-bullet">
         <li>item one</li>
         <li>item two</li>
         <li>item three</li>
@@ -61,14 +61,15 @@
 
     <h3>unordered inline lists</h3>
 
-    <ul>
-        <li>inline item one </li>
-        <li>inline item two</li>
-        <li>inline item three</li>
+    <ul class="list-non-bullet ">
+
+        <li class="list-item-inline">inline item  one </li>
+        <li class="list-item-inline">inline item  two</li>
+        <li class="list-item-inline">inline item three</li>
     </ul>
 
     <h3>reverse ordered lists</h3>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>egg</li>
         <li>break</li>
@@ -78,18 +79,18 @@
 
     <h2>@navigation</h2>
 
-    <nav>
+    <nav class="navigation container">
 
-        <div>BrandName</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+        <div class="nav-brand">BrandName</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="/">home</a>
             </li>
-            <li>
-                <a href="/">projects</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">projects</a>
             </li>
-            <li>
-                <a href="/">blogs</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">blogs</a>
             </li>
         </ul>
 
