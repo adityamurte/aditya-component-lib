@@ -62,10 +62,12 @@ border-radius: 0.5rem;
 .list-item-inline
 {
     display: inline;
-    padding: 0rem 0.5rem;
+    padding: -10rem;
 }
 
 /* navigation */
+    
+
 .navigation
 {
     background-color: var(--primary-color);
