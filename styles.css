@@ -2,8 +2,8 @@
 
 :root
 {
-    --primary-color: #7C3AED;
-    --dark-gray:#6B7280;
+    --primary-color: #F50057;
+    --dark-gray:#00000091;
     --off-white:#F3F4F6;
 
 }
@@ -35,9 +35,29 @@ padding: 0rem 1rem;
 .link
 {
 text-decoration: none;
-padding: 0.5rem 1rem;
+padding: 0.5rem 0.5rem;
+color: white;
 /* margin-top: 1rem;
 margin-bottom: 1rem; */
+}
+.link-nav
+{
+text-decoration: none;
+padding: 0.5rem 0.5rem;
+color: white;
+/* margin-top: 1rem;
+margin-bottom: 1rem; */
+}
+@media screen and (min-width:300px ) and (max-width: 365px) 
+{
+    .link-nav{
+        text-decoration: none;
+        padding: 0.5rem 0.1rem;
+        /* color: white; */
+        /* display: inline-flexbox; */
+        /* justify-content: center; */
+        
+    }
 }
 
 .link-primary
@@ -55,24 +75,38 @@ border-radius: 0.5rem;
 
 /* lists */
 
-.list-non-bullet
+.list-non-bullet-nav
+{
+    list-style: none;
+    /* border: 2px solid black; */
+}
+ 
+.list-non-bullet-foot
 {
     list-style: none;
 }
-.list-item-inline
+.list-item-nav
+{
+    
+    display: inline;
+    padding-right: 0%;  
+
+}
+.list-item-foot
 {
     display: inline;
-    padding: -5rem;
+    padding: -5rem; 
 }
-
 /* navigation */
-    
 
 .navigation
 {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
     border-bottom-left-radius: 1rem;
 }
 
@@ -106,15 +140,15 @@ padding-top: 5rem;
 
 
 }
-.hero .hero-img
+ .hero-img
 {
-    max-width: 350px;
+    max-width: 250px;
     display: block;
     margin: auto;
 }
 .hero .hero-heading
 {   
-    color: var(--dark-gray);
+    color: ;
     padding-top: 1rem;
     text-align: center;
 }
@@ -124,9 +158,18 @@ padding-top: 5rem;
 }
 
 /* secion */
+@media screen and (max-width: 900px)
+{
+.section {
+    width: auto;
+}
+}
 .section
 {
-    padding: 2rem;
+    margin: 3.7rem  auto;
+    padding: 2.5rem 1rem;
+    border-radius: 1rem;
+    height: auto;
 }
 .section h1
 {
@@ -140,7 +183,8 @@ padding-top: 5rem;
 
 .section.ow
 {
-    background-color: var(--off-white);
+    background-color: rgb(116, 114, 114);
+
 }
 
 /* footer */
